@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout android:id="@+id/relativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center">
+        <Button android:layout_alignParentTop="true" android:layout_height="wrap_content" android:id="@+id/picImagebutton" android:layout_width="fill_parent" android:layout_alignParentLeft="true" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="35dp" android:text="Select an image"></Button>
+        <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/lanuageCode" android:layout_below="@+id/imageName" android:layout_alignParentLeft="true" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="25dp" android:hint="@string/LangDefault" android:textColorHighlight="#fffacd"></EditText>
+        <EditText android:layout_height="wrap_content" android:id="@+id/apiKey" android:layout_below="@+id/lanuageCode" android:layout_centerHorizontal="true" android:layout_width="fill_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="25dp" android:hint="@string/keyDefault" android:textColorHighlight="#fffacd">
+            <requestFocus></requestFocus>
+        </EditText>
+        <Button android:layout_height="wrap_content" android:id="@+id/convert" android:layout_below="@+id/apiKey" android:layout_centerHorizontal="true" android:layout_width="fill_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="45dp" android:text="Convert to text"></Button>
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/imageName" android:text="Selected:" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/picImagebutton" android:layout_centerHorizontal="true" android:layout_marginLeft="20dp" android:layout_marginRight="10dp" android:layout_marginTop="20dp"></TextView>
+    </RelativeLayout>
+</LinearLayout>

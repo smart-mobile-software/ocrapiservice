@@ -1,0 +1,12 @@
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\Phone.Controls\Bin\Debug\Phone.Controls.dll
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\Phone.Controls\Bin\Debug\Phone.Controls.pdb
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\Phone.Controls\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\Phone.Controls\obj\Debug\Phone.Controls.g.resources
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\Phone.Controls\obj\Debug\Phone.Controls.dll
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\Phone.Controls\obj\Debug\Phone.Controls.pdb
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\Phone.Controls\Bin\Debug\Phone.Controls.dll
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\Phone.Controls\Bin\Debug\Phone.Controls.pdb
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\Phone.Controls\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\Phone.Controls\obj\Debug\Phone.Controls.g.resources
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\Phone.Controls\obj\Debug\Phone.Controls.dll
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\Phone.Controls\obj\Debug\Phone.Controls.pdb

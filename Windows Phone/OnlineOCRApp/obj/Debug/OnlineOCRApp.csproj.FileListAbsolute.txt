@@ -1,0 +1,42 @@
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\ApplicationIcon.png
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\Background.png
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\Images\chinese_simplified_text.png
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\Images\chinese_simplified_text2.jpg
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\Images\english_text.png
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\Images\english_text2.jpg
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\Images\french_text.png
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\Images\russian_text.png
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\OnlineOCRApp.dll
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\OnlineOCRApp.pdb
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\AppManifest.xaml
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\OnlineOCRApp.xap
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\Phone.Controls.dll
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\Bin\Debug\Phone.Controls.pdb
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\obj\Debug\App.g.i.cs
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\obj\Debug\MainPage.g.i.cs
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\obj\Debug\OnlineOCRApp.g.resources
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\obj\Debug\OnlineOCRApp.dll
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\obj\Debug\OnlineOCRApp.pdb
+C:\Users\Serial Hacker\Downloads\OnlineOCRApp (2)\OnlineOCRApp\OnlineOCRApp\obj\Debug\XapCacheFile.xml
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\obj\Debug\App.g.i.cs
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\obj\Debug\MainPage.g.i.cs
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\obj\Debug\OnlineOCRApp.g.resources
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\obj\Debug\OnlineOCRApp.dll
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\obj\Debug\OnlineOCRApp.pdb
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\ApplicationIcon.png
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\Background.png
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\Images\chinese_simplified_text.png
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\Images\chinese_simplified_text2.jpg
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\Images\english_text.png
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\Images\english_text2.jpg
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\Images\french_text.png
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\Images\russian_text.png
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\OnlineOCRApp.dll
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\OnlineOCRApp.pdb
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\AppManifest.xaml
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\OnlineOCRApp.xap
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\Phone.Controls.dll
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\Bin\Debug\Phone.Controls.pdb
+C:\Users\Serial Hacker\Documents\Travail\Business\Mobile Apps\Products\OcrApiService\Documentation\Windows Phone\OnlineOCRApp\obj\Debug\XapCacheFile.xml
