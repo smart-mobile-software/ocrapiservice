@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C4350231485A23100DF57F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4350221485A23100DF57F8 /* UIKit.framework */; };
+		5C4350251485A23100DF57F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4350241485A23100DF57F8 /* Foundation.framework */; };
+		5C4350271485A23100DF57F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4350261485A23100DF57F8 /* CoreGraphics.framework */; };
+		5C43502D1485A23100DF57F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C43502B1485A23100DF57F8 /* InfoPlist.strings */; };
+		5C4350301485A23100DF57F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C43502F1485A23100DF57F8 /* main.m */; };
+		5C4350331485A23100DF57F8 /* ocrapiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4350321485A23100DF57F8 /* ocrapiAppDelegate.m */; };
+		5C4350361485A23100DF57F8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4350341485A23100DF57F8 /* MainWindow.xib */; };
+		5C4350391485A23100DF57F8 /* ocrapiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4350381485A23100DF57F8 /* ocrapiViewController.m */; };
+		5C43503C1485A23100DF57F8 /* ocrapiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C43503A1485A23100DF57F8 /* ocrapiViewController.xib */; };
+		5C4350521485C5E800DF57F8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4350511485C5E800DF57F8 /* MobileCoreServices.framework */; };
+		5C4350611485D12C00DF57F8 /* OcrApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4350601485D12C00DF57F8 /* OcrApiManager.m */; };
+		5C4350661485E1F500DF57F8 /* english_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4350651485E1F500DF57F8 /* english_text.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C43501E1485A23100DF57F8 /* ocrapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ocrapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4350221485A23100DF57F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5C4350241485A23100DF57F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5C4350261485A23100DF57F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5C43502A1485A23100DF57F8 /* ocrapi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ocrapi-Info.plist"; sourceTree = "<group>"; };
+		5C43502C1485A23100DF57F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C43502E1485A23100DF57F8 /* ocrapi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ocrapi-Prefix.pch"; sourceTree = "<group>"; };
+		5C43502F1485A23100DF57F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C4350311485A23100DF57F8 /* ocrapiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ocrapiAppDelegate.h; sourceTree = "<group>"; };
+		5C4350321485A23100DF57F8 /* ocrapiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ocrapiAppDelegate.m; sourceTree = "<group>"; };
+		5C4350351485A23100DF57F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5C4350371485A23100DF57F8 /* ocrapiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ocrapiViewController.h; sourceTree = "<group>"; };
+		5C4350381485A23100DF57F8 /* ocrapiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ocrapiViewController.m; sourceTree = "<group>"; };
+		5C43503B1485A23100DF57F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ocrapiViewController.xib; sourceTree = "<group>"; };
+		5C4350511485C5E800DF57F8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5C43505F1485D12B00DF57F8 /* OcrApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcrApiManager.h; sourceTree = "<group>"; };
+		5C4350601485D12C00DF57F8 /* OcrApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcrApiManager.m; sourceTree = "<group>"; };
+		5C4350621485D16B00DF57F8 /* OcrApiManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcrApiManagerDelegate.h; sourceTree = "<group>"; };
+		5C4350651485E1F500DF57F8 /* english_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = english_text.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C43501B1485A23000DF57F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4350521485C5E800DF57F8 /* MobileCoreServices.framework in Frameworks */,
+				5C4350231485A23100DF57F8 /* UIKit.framework in Frameworks */,
+				5C4350251485A23100DF57F8 /* Foundation.framework in Frameworks */,
+				5C4350271485A23100DF57F8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C4350131485A23000DF57F8 = {
+			isa = PBXGroup;
+			children = (
+				5C4350281485A23100DF57F8 /* ocrapi */,
+				5C4350211485A23100DF57F8 /* Frameworks */,
+				5C43501F1485A23100DF57F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C43501F1485A23100DF57F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C43501E1485A23100DF57F8 /* ocrapi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C4350211485A23100DF57F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C4350511485C5E800DF57F8 /* MobileCoreServices.framework */,
+				5C4350221485A23100DF57F8 /* UIKit.framework */,
+				5C4350241485A23100DF57F8 /* Foundation.framework */,
+				5C4350261485A23100DF57F8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C4350281485A23100DF57F8 /* ocrapi */ = {
+			isa = PBXGroup;
+			children = (
+				5C4350501485AB0300DF57F8 /* HtmlPost */,
+				5C4350311485A23100DF57F8 /* ocrapiAppDelegate.h */,
+				5C4350321485A23100DF57F8 /* ocrapiAppDelegate.m */,
+				5C4350341485A23100DF57F8 /* MainWindow.xib */,
+				5C4350371485A23100DF57F8 /* ocrapiViewController.h */,
+				5C4350381485A23100DF57F8 /* ocrapiViewController.m */,
+				5C43503A1485A23100DF57F8 /* ocrapiViewController.xib */,
+				5C4350291485A23100DF57F8 /* Supporting Files */,
+			);
+			path = ocrapi;
+			sourceTree = "<group>";
+		};
+		5C4350291485A23100DF57F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C4350651485E1F500DF57F8 /* english_text.png */,
+				5C43502A1485A23100DF57F8 /* ocrapi-Info.plist */,
+				5C43502B1485A23100DF57F8 /* InfoPlist.strings */,
+				5C43502E1485A23100DF57F8 /* ocrapi-Prefix.pch */,
+				5C43502F1485A23100DF57F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C4350501485AB0300DF57F8 /* HtmlPost */ = {
+			isa = PBXGroup;
+			children = (
+				5C43505F1485D12B00DF57F8 /* OcrApiManager.h */,
+				5C4350601485D12C00DF57F8 /* OcrApiManager.m */,
+				5C4350621485D16B00DF57F8 /* OcrApiManagerDelegate.h */,
+			);
+			name = HtmlPost;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C43501D1485A23000DF57F8 /* ocrapi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C43503F1485A23100DF57F8 /* Build configuration list for PBXNativeTarget "ocrapi" */;
+			buildPhases = (
+				5C43501A1485A23000DF57F8 /* Sources */,
+				5C43501B1485A23000DF57F8 /* Frameworks */,
+				5C43501C1485A23000DF57F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ocrapi;
+			productName = ocrapi;
+			productReference = 5C43501E1485A23100DF57F8 /* ocrapi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C4350151485A23000DF57F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 5C4350181485A23000DF57F8 /* Build configuration list for PBXProject "ocrapi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C4350131485A23000DF57F8;
+			productRefGroup = 5C43501F1485A23100DF57F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C43501D1485A23000DF57F8 /* ocrapi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C43501C1485A23000DF57F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C43502D1485A23100DF57F8 /* InfoPlist.strings in Resources */,
+				5C4350361485A23100DF57F8 /* MainWindow.xib in Resources */,
+				5C43503C1485A23100DF57F8 /* ocrapiViewController.xib in Resources */,
+				5C4350661485E1F500DF57F8 /* english_text.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C43501A1485A23000DF57F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4350301485A23100DF57F8 /* main.m in Sources */,
+				5C4350331485A23100DF57F8 /* ocrapiAppDelegate.m in Sources */,
+				5C4350391485A23100DF57F8 /* ocrapiViewController.m in Sources */,
+				5C4350611485D12C00DF57F8 /* OcrApiManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C43502B1485A23100DF57F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C43502C1485A23100DF57F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5C4350341485A23100DF57F8 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C4350351485A23100DF57F8 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5C43503A1485A23100DF57F8 /* ocrapiViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C43503B1485A23100DF57F8 /* en */,
+			);
+			name = ocrapiViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C43503D1485A23100DF57F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C43503E1485A23100DF57F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		5C4350401485A23100DF57F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ocrapi/ocrapi-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "ocrapi/ocrapi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5C4350411485A23100DF57F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ocrapi/ocrapi-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "ocrapi/ocrapi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C4350181485A23000DF57F8 /* Build configuration list for PBXProject "ocrapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C43503D1485A23100DF57F8 /* Debug */,
+				5C43503E1485A23100DF57F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C43503F1485A23100DF57F8 /* Build configuration list for PBXNativeTarget "ocrapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4350401485A23100DF57F8 /* Debug */,
+				5C4350411485A23100DF57F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C4350151485A23000DF57F8 /* Project object */;
+}
