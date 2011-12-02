@@ -157,7 +157,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
-    UIImage *originalImage;
+    UIImage *originalImage;  
     
     // Handle a still image picked from a photo album
     if (CFStringCompare ((CFStringRef) mediaType, kUTTypeImage, 0)
@@ -173,16 +173,16 @@
     }
     
     // Hide picker selector
-    [[picker parentViewController] dismissModalViewControllerAnimated: YES];
+    [picker dismissModalViewControllerAnimated: YES];
     [picker release];
 }
 
 
-
 // Picker has cancelled
 -(void) imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
     // Hide picker selector
-    [[picker parentViewController] dismissModalViewControllerAnimated: YES];
+    [picker dismissModalViewControllerAnimated: YES];
     [picker release];
 }
 
