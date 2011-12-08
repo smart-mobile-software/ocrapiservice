@@ -14,11 +14,12 @@ The second is raised when an error ocurred
 The third one returns the result in the data parameter
 
 - Then to call the post method you should run these lines:  
-	// Get the image  
-	UIImage * img = [UIImage imageNamed:@"english_text.png"];  
-	// Allocate the OCR API managerOcrApiManager * mgr = [[[OcrApiManager alloc] init] autorelease];  
-	mgr.delegate = self;  
-	[mgr postImage:img withApiKey:@"key" andLanguageCode:@"language"];  
+    // Get the image  
+    UIImage * img = [UIImage imageNamed:@"english_text.png"];  
+    // Allocate the OCR API managerOcrApiManager * mgr = [[[OcrApiManager alloc] init] autorelease];  
+    mgr.delegate = self;  
+    [mgr postImage:img withApiKey:@"key" andLanguageCode:@"language"];  
+
 
 
 
