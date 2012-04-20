@@ -58,7 +58,6 @@ $(document).ready(function() {
 
 			// Request successfully completed 
 			$("#extractedText").html(decodeURIComponent(response.response));
-            //$("#extractedText").html("hello%20world");
 					
 		}, function(error) {
 			// Request unsuccessful
