@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'apitest' target in the 'apitest' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
