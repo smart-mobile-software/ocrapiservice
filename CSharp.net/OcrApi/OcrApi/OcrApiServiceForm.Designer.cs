@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this._sendButton = new System.Windows.Forms.Button();
             this._apiCodeLabel = new System.Windows.Forms.Label();
             this._apiCodeTextBox = new System.Windows.Forms.TextBox();
-            this._languageCodeTextBox = new System.Windows.Forms.TextBox();
+            this._languageCodeComboBox = new System.Windows.Forms.ComboBox();
             this._languageCodeLabel = new System.Windows.Forms.Label();
             this._browseButton = new System.Windows.Forms.Button();
             this._selectFileTextBox = new System.Windows.Forms.TextBox();
@@ -39,8 +40,11 @@
             this._requestGroupBox = new System.Windows.Forms.GroupBox();
             this._responseGroupBox = new System.Windows.Forms.GroupBox();
             this._responseTextBox = new System.Windows.Forms.TextBox();
+            this._errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this._panel = new System.Windows.Forms.Panel();
             this._requestGroupBox.SuspendLayout();
             this._responseGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // _sendButton
@@ -70,13 +74,13 @@
             this._apiCodeTextBox.TabIndex = 2;
             this._apiCodeTextBox.TextChanged += new System.EventHandler(this._apiCodeTextBox_TextChanged);
             // 
-            // _languageCodeTextBox
+            // _languageCodeComboBox
             // 
-            this._languageCodeTextBox.Location = new System.Drawing.Point(32, 76);
-            this._languageCodeTextBox.Name = "_languageCodeTextBox";
-            this._languageCodeTextBox.Size = new System.Drawing.Size(196, 20);
-            this._languageCodeTextBox.TabIndex = 4;
-            this._languageCodeTextBox.TextChanged += new System.EventHandler(this._languageCodeTextBox_TextChanged);
+            this._languageCodeComboBox.Location = new System.Drawing.Point(32, 76);
+            this._languageCodeComboBox.Name = "_languageCodeComboBox";
+            this._languageCodeComboBox.Size = new System.Drawing.Size(196, 21);
+            this._languageCodeComboBox.TabIndex = 4;
+            this._languageCodeComboBox.TextChanged += new System.EventHandler(this._languageCodeTextBox_TextChanged);
             // 
             // _languageCodeLabel
             // 
@@ -104,6 +108,7 @@
             this._selectFileTextBox.Size = new System.Drawing.Size(196, 20);
             this._selectFileTextBox.TabIndex = 6;
             this._selectFileTextBox.TextChanged += new System.EventHandler(this._selectFileTextBox_TextChanged);
+            this._selectFileTextBox.Validating += new System.ComponentModel.CancelEventHandler(this._selectFileTextBox_Validating);
             // 
             // _selectFileLabel
             // 
@@ -122,7 +127,7 @@
             this._requestGroupBox.Controls.Add(this._selectFileTextBox);
             this._requestGroupBox.Controls.Add(this._apiCodeTextBox);
             this._requestGroupBox.Controls.Add(this._languageCodeLabel);
-            this._requestGroupBox.Controls.Add(this._languageCodeTextBox);
+            this._requestGroupBox.Controls.Add(this._languageCodeComboBox);
             this._requestGroupBox.Location = new System.Drawing.Point(15, 12);
             this._requestGroupBox.Name = "_requestGroupBox";
             this._requestGroupBox.Size = new System.Drawing.Size(320, 295);
@@ -150,20 +155,33 @@
             this._responseTextBox.Size = new System.Drawing.Size(301, 268);
             this._responseTextBox.TabIndex = 0;
             // 
+            // _errorProvider
+            // 
+            this._errorProvider.ContainerControl = this;
+            // 
+            // _panel
+            // 
+            this._panel.Location = new System.Drawing.Point(2, 9);
+            this._panel.Name = "_panel";
+            this._panel.Size = new System.Drawing.Size(666, 339);
+            this._panel.TabIndex = 10;
+            // 
             // OcrApiServiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 360);
+            this.ClientSize = new System.Drawing.Size(673, 353);
             this.Controls.Add(this._responseGroupBox);
             this.Controls.Add(this._requestGroupBox);
             this.Controls.Add(this._sendButton);
+            this.Controls.Add(this._panel);
             this.Name = "OcrApiServiceForm";
             this.Text = "Online OCR Api";
             this._requestGroupBox.ResumeLayout(false);
             this._requestGroupBox.PerformLayout();
             this._responseGroupBox.ResumeLayout(false);
             this._responseGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._errorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -173,7 +191,7 @@
         private System.Windows.Forms.Button _sendButton;
         private System.Windows.Forms.Label _apiCodeLabel;
         private System.Windows.Forms.TextBox _apiCodeTextBox;
-        private System.Windows.Forms.TextBox _languageCodeTextBox;
+        private System.Windows.Forms.ComboBox _languageCodeComboBox;
         private System.Windows.Forms.Label _languageCodeLabel;
         private System.Windows.Forms.Button _browseButton;
         private System.Windows.Forms.TextBox _selectFileTextBox;
@@ -181,6 +199,8 @@
         private System.Windows.Forms.GroupBox _requestGroupBox;
         private System.Windows.Forms.GroupBox _responseGroupBox;
         private System.Windows.Forms.TextBox _responseTextBox;
+        private System.Windows.Forms.ErrorProvider _errorProvider;
+        private System.Windows.Forms.Panel _panel;
     }
 }
 

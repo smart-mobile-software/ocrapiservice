@@ -20,9 +20,11 @@ namespace OcrApi
             _formModel = _formManager.LoadLastRequest();
             InitializeComponent();
             SetControlsNames();
+            _languageCodeComboBox.Items.AddRange(_formManager.GetCodes().ToArray());
             _apiCodeTextBox.Text = _formModel.ApiKey;
-            _languageCodeTextBox.Text = _formModel.LanguageCode;
+            _languageCodeComboBox.Text = _formModel.LanguageCode;
             _selectFileTextBox.Text = _formManager.GetFilePath(_formModel);
+            _errorProvider.SetIconPadding(_selectFileTextBox, -20);
         }
 
         private void SetControlsNames()
@@ -49,19 +51,34 @@ namespace OcrApi
 
         private void _languageCodeTextBox_TextChanged(object sender, EventArgs e)
         {
-            _formModel.LanguageCode = _languageCodeTextBox.Text;
+            _formModel.LanguageCode = _languageCodeComboBox.Text;
         }
 
         private void _selectFileTextBox_TextChanged(object sender, EventArgs e)
         {
-            _formModel.PicturePath = _selectFil.eTextBox.Text;
+            _formModel.PicturePath = _selectFileTextBox.Text;
         }
 
         private void _sendButton_Click(object sender, EventArgs e)
         {
             _panel.Enabled = false;
+            UseWaitCursor = true;
             _responseTextBox.Text = _formManager.SendImage(_formModel);
+            UseWaitCursor = false;
             _panel.Enabled = true;
+        }
+
+        private void _selectFileTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            string validationResult = _formManager.ValidateFilePath(_formModel);
+            if (!string.IsNullOrEmpty(validationResult))
+            {
+                _errorProvider.SetError(_selectFileTextBox, validationResult);
+            }
+            else
+            {
+                _errorProvider.Clear();
+            }
         }
     }
 }
