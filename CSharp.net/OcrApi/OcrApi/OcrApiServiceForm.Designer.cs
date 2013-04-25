@@ -172,9 +172,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 353);
-            this.Controls.Add(this._responseGroupBox);
-            this.Controls.Add(this._requestGroupBox);
-            this.Controls.Add(this._sendButton);
+            this._panel.Controls.Add(this._responseGroupBox);
+            this._panel.Controls.Add(this._requestGroupBox);
+            this._panel.Controls.Add(this._sendButton);
             this.Controls.Add(this._panel);
             this.Name = "OcrApiServiceForm";
             this.Text = "Online OCR Api";
