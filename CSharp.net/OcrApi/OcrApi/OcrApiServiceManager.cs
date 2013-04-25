@@ -23,7 +23,13 @@ namespace OcrApi
         private const string _ocrApiServiceUrl = "http://api.ocrapiservice.com/1.0/rest/ocr";
         private const string _filterText = "Image Files ({0})|{1}";
         private const string _requestParamTemplate = "apikey={0}&language={1}&image=";
-        private readonly IEnumerable<string> _allowedFileTypes = new[] { "*.png", "*.jpg" };
+        private readonly IDictionary<string, string> _imageTypes = new Dictionary<string, string>()
+        {
+            {".png", "image/png"},
+            {".jpg", "image/jpg"},
+            {".jpeg", "image/jpg"}
+        };
+        private readonly IEnumerable<string> _allowedFileTypes = new[] { "*.png", "*.jpg", "*.jpeg" };
         private readonly XmlSerializer _uiModelSerializer;
         private readonly TaskFactory taskFactory;
         public OcrApiServiceManager()
@@ -76,12 +82,11 @@ namespace OcrApi
 
         }
 
-        public string SendImage(PostImageModel model)
+        public void SendImage(PostImageModel model, Action<string> callback)
         {
-            string result = string.Empty;
-            Semaphore semaphore = new Semaphore(0, 1);
             Task task = taskFactory.StartNew(() =>
                 {
+                    string result = string.Empty;
                     try
                     {
                         ToXML(model);
@@ -96,42 +101,40 @@ namespace OcrApi
                     catch
                     { }
 
-                    if (semaphore != null)
-                    {
-                        semaphore.Release(1);
-                    }
+                    return result;
                 }
-            );
-
-            semaphore.WaitOne();
-
-            return result;
+            ).ContinueWith(cTask => callback(cTask.Result), TaskScheduler.FromCurrentSynchronizationContext());
         }
 
         private string GetImageType(string path)
         {
-            string type = Path.GetExtension(path).Replace(".", string.Empty);
-            return string.Format("image{0}", type);
+            string type = Path.GetExtension(path);
+            return _imageTypes[type];
         }
 
         public string BrowseFile(PostImageModel model)
         {
             string fileToOpen = string.Empty;
-            OpenFileDialog fileDialog = new OpenFileDialog();
-            string directoryName = Path.GetDirectoryName(model.PicturePath);
-            if (Directory.Exists(directoryName))
+            using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
-                fileDialog.InitialDirectory = directoryName;
-            }
+                if (!string.IsNullOrEmpty(model.PicturePath))
+                {
+                    string directoryName = Path.GetDirectoryName(model.PicturePath);
+                    if (Directory.Exists(directoryName))
+                    {
+                        fileDialog.InitialDirectory = directoryName;
+                    }
+                }
 
-            if (_allowedFileTypes != null && _allowedFileTypes.Count() > 0)
-            {
-                fileDialog.Filter = BuildFileFilter();
-            }
+                if (_allowedFileTypes != null && _allowedFileTypes.Count() > 0)
+                {
+                    fileDialog.Filter = BuildFileFilter();
+                }
 
-            if (fileDialog.ShowDialog() == DialogResult.OK)
-            {
-                fileToOpen = fileDialog.FileName;
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    fileToOpen = fileDialog.FileName;
+                }
             }
 
             return fileToOpen;
@@ -154,7 +157,7 @@ namespace OcrApi
 
         private IEnumerable<string> GetAllowedFileExtentions()
         {
-            return _allowedFileTypes.Select(fileType => fileType.Replace("*", string.Empty));
+            return _allowedFileTypes.Select(fileType => Path.GetExtension(fileType));
         }
 
         private string BuildFileFilter()
@@ -172,6 +175,7 @@ namespace OcrApi
                     Directory.CreateDirectory(directory);
                 }
 
+                File.Delete(_lastPostedRequest);
                 using (StreamWriter streamWriter = new StreamWriter(_lastPostedRequest))
                 {
                     _uiModelSerializer.Serialize(streamWriter, model);

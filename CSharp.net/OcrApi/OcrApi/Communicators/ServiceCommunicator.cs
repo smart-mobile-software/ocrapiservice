@@ -17,7 +17,6 @@ namespace OcrApi.Communicators
             using (WebResponse response = request.GetResponse())
             {
                 responseFromServer.Status = ((HttpWebResponse)response).StatusDescription;
-
                 using (Stream dataStream = response.GetResponseStream())
                 {
                     using (var reader = new StreamReader(dataStream))
@@ -41,7 +40,9 @@ namespace OcrApi.Communicators
                 request.Method = "POST";
 
                 if (authorization != null)
+                {
                     request.Headers.Add("Authorization", authorization);
+                }
 
                 byte[] boundery = Encoding.UTF8.GetBytes(string.Concat(Environment.NewLine, "--", boundary, Environment.NewLine));
                 byte[] footer = Encoding.UTF8.GetBytes(string.Concat(Environment.NewLine, "--", boundary, "--"));

@@ -63,9 +63,14 @@ namespace OcrApi
         {
             _panel.Enabled = false;
             UseWaitCursor = true;
-            _responseTextBox.Text = _formManager.SendImage(_formModel);
-            UseWaitCursor = false;
-            _panel.Enabled = true;
+            Action<string> update = (value) =>
+                {
+                    _responseTextBox.Text = value;
+                    UseWaitCursor = false;
+                    _panel.Enabled = true;
+                };
+            _formManager.SendImage(_formModel, update);
+            
         }
 
         private void _selectFileTextBox_Validating(object sender, CancelEventArgs e)

@@ -15,7 +15,7 @@ namespace OcrApi.Models
 
         protected override string GetContentDispositionString()
         {
-            return string.Format("{0};filename={1}",base.GetContentDispositionString(), Value);
+            return string.Format("{0};filename='{1}'",base.GetContentDispositionString(), Value);
         }
 
         protected override void WriteValue(Stream writableStream)

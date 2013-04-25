@@ -76,6 +76,7 @@
             // 
             // _languageCodeComboBox
             // 
+            this._languageCodeComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this._languageCodeComboBox.Location = new System.Drawing.Point(32, 76);
             this._languageCodeComboBox.Name = "_languageCodeComboBox";
             this._languageCodeComboBox.Size = new System.Drawing.Size(196, 21);
