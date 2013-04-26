@@ -19,12 +19,15 @@ namespace OcrApi
             _formManager = new OcrApiServiceManager();
             _formModel = _formManager.LoadLastRequest();
             InitializeComponent();
+            _errorProvider.SetIconPadding(_selectFileTextBox, -20);
+            // Sets control text from the resources
             SetControlsNames();
+            // Adds existing language codes to combobox
             _languageCodeComboBox.Items.AddRange(_formManager.GetCodes().ToArray());
+            // Fills form from model
             _apiCodeTextBox.Text = _formModel.ApiKey;
             _languageCodeComboBox.Text = _formModel.LanguageCode;
             _selectFileTextBox.Text = _formManager.GetFilePath(_formModel);
-            _errorProvider.SetIconPadding(_selectFileTextBox, -20);
         }
 
         private void SetControlsNames()
@@ -61,18 +64,27 @@ namespace OcrApi
 
         private void _sendButton_Click(object sender, EventArgs e)
         {
+            // Disables form controls
             _panel.Enabled = false;
             UseWaitCursor = true;
+            // Actoin to show response and enable form controls
             Action<string> update = (value) =>
                 {
                     _responseTextBox.Text = value;
                     UseWaitCursor = false;
                     _panel.Enabled = true;
                 };
+
+            // Send ocr request
             _formManager.SendImage(_formModel, update);
             
         }
 
+        /// <summary>
+        /// Validates selected file path
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _selectFileTextBox_Validating(object sender, CancelEventArgs e)
         {
             string validationResult = _formManager.ValidateFilePath(_formModel);

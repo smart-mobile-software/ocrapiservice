@@ -45,6 +45,7 @@
             this._requestGroupBox.SuspendLayout();
             this._responseGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._errorProvider)).BeginInit();
+            this._panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // _sendButton
@@ -162,6 +163,9 @@
             // 
             // _panel
             // 
+            this._panel.Controls.Add(this._responseGroupBox);
+            this._panel.Controls.Add(this._requestGroupBox);
+            this._panel.Controls.Add(this._sendButton);
             this._panel.Location = new System.Drawing.Point(2, 9);
             this._panel.Name = "_panel";
             this._panel.Size = new System.Drawing.Size(666, 339);
@@ -172,10 +176,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 353);
-            this._panel.Controls.Add(this._responseGroupBox);
-            this._panel.Controls.Add(this._requestGroupBox);
-            this._panel.Controls.Add(this._sendButton);
             this.Controls.Add(this._panel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "OcrApiServiceForm";
             this.Text = "Online OCR Api";
             this._requestGroupBox.ResumeLayout(false);
@@ -183,6 +185,7 @@
             this._responseGroupBox.ResumeLayout(false);
             this._responseGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this._errorProvider)).EndInit();
+            this._panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

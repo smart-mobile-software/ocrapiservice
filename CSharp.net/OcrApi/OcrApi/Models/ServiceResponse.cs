@@ -5,7 +5,7 @@ using System.Text;
 
 namespace OcrApi.Models
 {
-    public class ServiceResponce
+    public class ServiceResponse
     {
         public string Response { get; set; }
         public string Status { get; set; }
