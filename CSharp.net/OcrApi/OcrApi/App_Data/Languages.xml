@@ -1,0 +1,40 @@
+<languages>
+	<language><name>Arabic</name><code>ar</code></language>
+	<language><name>Bulgarian</name><code>bg</code></language>
+	<language><name>Catalan</name><code>ca</code></language>
+	<language><name>Czech</name><code>cs</code></language>
+	<language><name>Chinese (Simplified)</name><code>zh-CN</code></language>
+	<language><name>Chinese (languageaditional)</name><code>zh-TW</code></language>
+	<language><name>Danish</name><code>da</code></language>
+	<language><name>German</name><code>de</code></language>
+	<language><name>Greek</name><code>el</code></language>
+	<language><name>English</name><code>en</code></language>
+	<language><name>Finnish</name><code>fi</code></language>
+	<language><name>French</name><code>fr</code></language>
+	<language><name>Hebrew</name><code>iw</code></language>
+	<language><name>Hindi</name><code>hi</code></language>
+	<language><name>Croatian</name><code>hr</code></language>
+	<language><name>Hungarian</name><code>hu</code></language>
+	<language><name>Indonesian</name><code>id</code></language>
+	<language><name>Italian</name><code>it</code></language>
+	<language><name>Japanese</name><code>ja</code></language>
+	<language><name>Korean</name><code>ko</code></language>
+	<language><name>Latvian</name><code>lv</code></language>
+	<language><name>Lithuanian</name><code>lt</code></language>
+	<language><name>Dutch</name><code>nl</code></language>
+	<language><name>Norwegian</name><code>no</code></language>
+	<language><name>Polish</name><code>pl</code></language>
+	<language><name>Portuguese</name><code>pt</code></language>
+	<language><name>Romanian</name><code>ro</code></language>
+	<language><name>Russian</name><code>ru</code></language>
+	<language><name>Slovak</name><code>sk</code></language>
+	<language><name>Slovenian</name><code>sl</code></language>
+	<language><name>Spanish</name><code>es</code></language>
+	<language><name>Serbian</name><code>sr</code></language>
+	<language><name>Swedish</name><code>sv</code></language>
+	<language><name>Tagalog</name><code>tl</code></language>
+	<language><name>Thai</name><code>th</code></language>
+	<language><name>Turkish</name><code>tr</code></language>
+	<language><name>Ukrainian</name><code>uk</code></language>
+	<language><name>Vietnamese</name><code>vi</code></language>
+</languages>
